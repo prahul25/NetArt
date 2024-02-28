@@ -1,0 +1,70 @@
+.App {
+  background: linear-gradient(white, #FFF9B1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Make logo responsive */
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make all images in content responsive */
+.contentWrapper img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Add spacing between images */
+}
+
+/* Make the award image responsive */
+.contentWrapper img.award-image {
+  width: 100%; /* Adjust width based on your preference */
+  max-width: 600px; /* Set a max-width to prevent excessive expansion on large screens */
+}
+
+.lines {
+  border: 1px solid red;
+  height: 500px;
+  margin: 10px 0;
+}
+
+.divisonLine{
+  height: 2px; width: 95%; background: red;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: red;
+  margin-top: 10px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .contentWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
